@@ -1,0 +1,126 @@
+body{
+  box-sizing: border-box;
+  font-family: 'Karla';
+}
+
+*{
+  margin: 0;
+}
+
+.container{
+  width: 18em;
+  margin: 0 auto;
+}
+
+.container-header{
+  width: 18em;
+  margin: 0 auto;
+}
+
+/*header{
+  width: 18em;
+    margin: 0 auto;
+}*/
+
+h1{
+  margin: 1.5em 0;
+  font-size: 1.8rem;
+  color: hsl(179, 62%, 43%);
+}
+
+span{
+  color: hsl(71, 73%, 54%);
+}
+
+p{
+  margin-top: 1.8em;
+  color: hsl(218, 22%, 67%);
+  margin-bottom: 2em;
+}
+
+.section{
+  color: white;
+  width: 100vw;
+}
+
+.subscription{
+  background-color: hsl(179, 62%, 43%);
+}
+
+
+h2{
+  font-size: 1.4rem;
+  padding: 1.5em 0 1.1em 0;
+  font-weight: 400;
+
+}
+
+.precio{
+  display: flex;
+  align-items: center;
+}
+
+.dollar{
+  font-size: 3rem;
+  display: inline;
+}
+
+.month{
+  padding-left: 1em;
+  color: hsl(204, 43%, 93%);
+  opacity: .8;
+}
+
+button{
+  width: 100%;
+  margin: 2.3em 0 1.9em 0;
+  padding: 1em;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+
+.us{
+  background-color: #4ABEBD;
+}
+
+.WhyUs-text-container{
+  width: 73%;
+  padding-bottom: 2em;
+}
+
+.WhyUs-text{
+  color: hsl(204, 43%, 93%);
+  margin: 0;
+}
+
+
+@media screen and (min-width: 600px){
+
+          .contenedor{
+            width: 55em;
+          }
+
+
+          .container-header{
+            width: 45rem;
+          }
+          .section{
+            display: flex;
+            flex-direction: row;
+            width: 53em;
+            margin: 0 auto;
+          }
+
+          .us{
+            width: 50%;
+
+          }
+
+          .subscription{
+            width: 50%;
+          }
+}
