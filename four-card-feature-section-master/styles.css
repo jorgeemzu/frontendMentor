@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: hsl(234, 12%, 34%);
+}
+
+body{
+  background-color: hsl(0, 0%, 98%);
+}
+
+.container{
+  width:  20em;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header{
+  padding-top: 3em;
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+h1{
+
+  font-size: 1.6rem;
+  padding-bottom: .8em;
+
+}
+
+h2{
+  margin-bottom: .3em;
+}
+
+span{
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+p{
+  font-weight: 200;
+  opacity: .8;
+}
+
+.card{
+  background-color: white;
+  margin-bottom: 1em;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 15px 44px -28px rgba(0,0,0,0.66);
+
+
+}
+
+.img{
+  margin-top: 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.border-cyan{
+  border-top: 5px solid hsl(180, 62%, 55%);
+  border-radius: 5px;
+  grid-area: card2;
+}
+
+.border-red{
+  border-top: 5px solid hsl(0, 78%, 62%);
+  border-radius: 5px;
+  grid-area: card1;
+}
+
+.border-orange{
+  border-top: 5px solid hsl(34, 97%, 64%);
+  border-radius: 5px;
+  grid-area: card3;
+}
+
+.border-blue{
+  border-top: 5px solid hsl(212, 86%, 64%);
+  border-radius: 5px;
+  grid-area: card4;
+}
+
+
+@media screen and (min-width: 700px){
+  .container{
+    width: 60em;
+  }
+
+  header{
+    width: 30em;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+  main{
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas:
+    ".     card1    ."
+    "card2 card1 card3"
+    "card2 card4 card3"
+    "  .   card4 .    ";
+    grid-gap: 20px;
+  }
+
+  .card{
+    margin: 0;
+  }
+
+}
