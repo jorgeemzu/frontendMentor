@@ -1,0 +1,329 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family:'Open Sans', sans-serif;
+  color: var(--dark-cyan);
+}
+
+/* Custom Properties*/
+
+:root{
+  --pink: hsl(322, 100%, 66%);
+  --pale-cyan:  hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --grey-blue: hsl(208, 11%, 55%);
+  --border-card: hsl(208, 11%, 85%);
+  --font-button: 'Open Sans';
+}
+
+.bg-container{
+  background: var(--pale-cyan);
+  position: relative;
+  background-image: url('images/bg-hero-mobile.svg');
+  background-size: cover;
+
+}
+
+.header-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0 5em 0;
+  align-items: center;
+
+}
+
+.logo-container{
+  width: 20%;
+}
+
+.logo{
+  max-width: 100%;
+}
+
+.button-nav{
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 0.5em 1.3em;
+  box-shadow: 0px 0px 9px 1px var(--border-card);
+}
+
+
+.text-header{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Poppins';
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+
+button{
+  font-weight: 700;
+  cursor: pointer;
+  /*font-family: var(--font-button);*/
+}
+
+.button-header{
+  margin: 1.5em 0 5em 0;
+  width: 20em;
+  background-color: var(--pink);
+  padding: 1em 3em;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  max-width: 100%;
+
+}
+
+
+.image-header img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 3em;
+}
+
+.main-container{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.card{
+  width: 100%;
+  border-radius: 5px;
+  padding: 2em;
+  text-align: center;
+  margin-top: 1em;
+  box-shadow: 0px 0px 9px 1px var(--border-card);
+}
+
+.card-img img{
+  max-width: 100%;
+}
+
+h2{
+  font-family:'Poppins', sans-serif;
+  margin: 2em 0 .5em 0;
+}
+
+.card-text p{
+  font-size: .8rem;
+  color: var(--grey-blue);
+}
+
+.card-button{
+box-shadow: 0px -13px 19px -12px var(--border-card);
+border-radius: 10px;
+margin-top: 3em;
+text-align: center;
+padding: 1em 0;
+margin-bottom: -4em;
+background-color: white;
+}
+
+main{
+  position: relative;
+}
+
+.card-button button{
+  margin-bottom: 1em;
+
+
+}
+
+
+
+footer{
+  background-color: var(--dark-cyan);
+
+}
+
+.footer-container{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3em;
+}
+
+.footer-container p{
+  color: var(--border-card);
+  font-size: .91rem;
+}
+
+.footer-img{
+  width: 50%;
+  padding-top: 3em;
+  margin-bottom: 1em;
+}
+
+.footer-img img{
+  max-width: 100%;
+}
+
+.footer-huddle-content{
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.footer-huddle-content img{
+  margin-right: 1em;
+  height: 50%;
+  padding-top: .4em;
+}
+
+
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+ul li a{
+  text-decoration: none;
+  color: var(--border-card);
+  margin-bottom: 1em;
+  display: block;
+}
+
+.social ul{
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.social ul li a i{
+  color: var(--border-card);
+  border: solid 1px var(--border-card);
+  border-radius: 50%;
+  padding: 1em;
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+  text-align: center;
+
+}
+@media screen and (min-width: 800px){
+
+  .bg-container{
+    background-image: url('images/bg-hero-desktop.svg');
+  }
+  .header-content{
+    display: flex;
+    align-items: center;
+  }
+
+  .button-nav{
+    padding: 0.5em 5.3em;
+  }
+
+  .text-header{
+    width: 50%;
+    margin-right: 2em;
+    text-align: left;
+  }
+
+  h1{
+    font-size: 2.5em;
+  }
+
+  .image-header{
+    width: 60%;
+  }
+
+  .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-left: 7em;
+    flex-direction: row-reverse;
+  }
+
+  .flex-reverse{
+    flex-direction: row;
+
+  }
+
+  h2{
+    margin: 0 0 .5em 0;
+  }
+
+  .card-img{
+    width: 40%
+  }
+
+  .card-text{
+    width: 40%;
+    font-size: 1.3rem;
+  }
+
+  .card-text p{
+    font-size: 1.1rem;
+
+  }
+
+  .card-button{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-img{
+    width: 20%;
+  }
+
+  .info{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0;
+  }
+
+  .info-flex{
+    width: 30%;
+  }
+
+
+  .copyright{
+    padding-bottom: 3em;
+    margin-left: auto;
+    width: max-content;
+  }
+}
+
+@media screen and (max-width:800px){
+  .copyright{
+    display: none;
+  }
+
+  .social{
+    margin-top: 2em;
+  }
+
+  .info-flex{
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------
+
+              UTILIZAR EL WIDTH DE LOS CONTAINER EN %
+
+
+---------------------------------------------------------------------------*/
