@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/c644165e18.js" crossorigin="anonymous"></script>
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class=" header container">
+      <div class="header__socialMedia">
+        <h2>Social Media Dashboard</h2>  
+        <p>Total Followers: 23,004</p> 
+  
+      </div>
+      <div class="header__darkMode">
+        <p>Dark Mode</p>
+        <div class="checkbox_container">
+          <input class="checkbox" onclick="darkMode()" type="checkbox"  id="checkbox">
+          <label class="switch" for="checkbox">
+          
+          </label>
+        </div> 
+      </div>
+
+    </div>
+
+  </header>
+    
+  
+    <div class="gridContainer container main_grid">
+      <div class="gridContainer__maincard facebook_border">
+        <div class="flexContainer">
+          <div class="facebook_icon">
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <p>@nathanf</p>
+        </div>
+        <h2>1987</h2>
+        <p class="followers">Followers</p>
+        <div class="flexContainer arrowCard">
+          <img src="images/icon-up.svg" alt="">
+          <p class="newFollower">12 Today</p>
+        </div>
+      </div>
+
+  
+
+      <div class="gridContainer__maincard twitter_border">
+        <div class="flexContainer ">
+          <div class="twitter_icon">
+            <i class="fab fa-twitter"></i>
+
+          </div>
+          <p>@nathanf</p>
+        </div>
+        <h2>1044</h2>
+        <p class="followers">Followers</p>
+        <div class="flexContainer arrowCard">
+          <img src="images/icon-up.svg" alt="">
+          <p class="newFollower">99 Today</p>
+
+        </div>
+      </div>
+
+      
+
+      <div class="instagram">
+        <div class="gridContainer__maincard">
+          <div class="flexContainer  ">
+            <h3 class="instaIcon" ><i class="fab fa-instagram"></i></h3>
+            <p>@realnathanf</p>
+          </div>
+          <h2>11k</h2>
+          <p class="followers">Followers</p>
+          <div class="flexContainer arrowCard">
+            <img src="images/icon-up.svg" alt="">
+            <p class="newFollower">1099 Today</p>
+          </div>
+
+        </div>
+      </div>
+
+      
+ 
+
+      <div class="gridContainer__maincard youtube_border">
+        <div class="flexContainer ">
+          <div class="youtube_icon">
+            <i class="fab fa-youtube-square"></i>
+
+          </div>
+          <p>Nathan F.</p>
+        </div>
+        <h2>8239</h2>
+        <p class="followers">Subscribers</p>
+        <div class="flexContainer arrowCard_red ">
+          <img src="images/icon-down.svg" alt="">
+          <p class="newFollower">144 Today</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <section class="Card_overview container">
+      <div class="overview_today">
+        <h2>  Overview - Today    </h2>
+      </div>
+      <div class="gridContainer">
+
+        <div class="overview_card">
+          <div class="overview_text">
+            <p>Page Views </p>
+            <h2>87</h2>
+          </div>
+          <div class="overview_icons">
+            <div class="facebook_icon">
+              <i class="fab fa-facebook-square "></i>
+            </div>
+            <div class=" flexContainer arrowCard">
+              <img src="images/icon-up.svg" alt="">
+              <p>3%</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="overview_card">
+          <div class="overview_text">
+            <p>Likes</p>
+              <h2>52</h2>
+          </div>
+          <div class="overview_icons">
+            <div class="facebook_icon">
+              <i class="fab fa-facebook-square"></i>
+
+            </div>
+            <div class="flexContainer arrowCard_red">
+              <img src="images/icon-down.svg" alt="arrow Down">
+              <p>2%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview_card">
+          <div class="overview_text">
+            <p>Likes</p>
+              <h2>5462</h2>
+          </div>
+          <div class="overview_icons">
+          <h3 class="instaIcon" ><i class="fab fa-instagram"></i></h3>
+            
+            <div class=" flexContainer arrowCard">
+              <img src="images/icon-up.svg" alt="">
+              <p>2257%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview_card">
+          <div class="overview_text">
+            <p>Profile Viewss</p>
+              <h2>52k</h2>
+          </div>
+          <div class="overview_icons">
+            <h3 class="instaIcon" ><i class="fab fa-instagram"></i></h3>
+            <div class="flexContainer arrowCard">
+              <img src="images/icon-up.svg" alt="">
+              <p>1375%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview_card">
+          <div class="overview_text">
+            <p>Retweets</p>
+              <h2>117</h2>
+          </div>
+          <div class="overview_icons">
+            <div class="twitter_icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="flexContainer arrowCard">
+              <img src="images/icon-up.svg" alt="">
+              <p>303%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview_card">
+          <div class="overview_text">
+            <p>Likes</p>
+              <h2>507</h2>
+          </div>
+          <div class="overview_icons">
+            <div class="twitter_icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="flexContainer arrowCard">
+              <img src="images/icon-up.svg" alt="">
+              <p>553%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview_card">
+          <div class="overview_text">
+            <p>Likes</p>
+              <h2>107</h2>
+          </div>
+          <div class="overview_icons">
+            <div class="youtube_icon">
+              <i class="fab fa-youtube-square"></i>
+            </div>
+            <div class="flexContainer arrowCard_red">
+              <img src="images/icon-down.svg" alt="">
+              <p>19%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview_card">
+          <div class="overview_text">
+            <p>Total Views</p>
+              <h2>1407</h2>
+          </div>
+          <div class="overview_icons">
+            <div class="youtube_icon">
+              <i class="fab fa-youtube-square"></i>
+            </div>
+            <div class="flexContainer arrowCard_red">
+              <img src="images/icon-down.svg" alt="">
+              <p>12%</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <script src="darkMode.js"></script>
+    
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  
+</body>
+</html>
