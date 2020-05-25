@@ -156,6 +156,8 @@ nav{
     color: white;
     position: relative;
     margin-bottom: 8em;
+    
+    
 }
 
 .hero__text .top-pattern, .bottom-pattern {
@@ -172,11 +174,20 @@ nav{
     bottom: -190px;
 }
 
+.mobile-intro{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
 .hero__text > h1{
  font-weight: 400;
  margin-bottom: .5em;
  font-size: 2.8rem;
  position: relative;
+ margin: 0 auto ;
+ width: 90%;
 }
 
 .hero__text > p {
@@ -212,6 +223,8 @@ main{
 .services__header{
     position: relative;
     margin-bottom: 3em;
+    padding-top: 6em;
+    text-align: center;
 }
 
 .services__header::after{
@@ -220,7 +233,7 @@ main{
     width: 40%;
     height: 1px;
     background-color: var(--darViolet);
-    top: -10px;
+    top: 60px;
     left: 30%;
 
 }
@@ -254,6 +267,7 @@ main{
     text-align: center;
     position: relative;
     margin-bottom: 10em;
+    overflow: hidden;
 }
 
 .more h2,a{
@@ -270,7 +284,7 @@ main{
     margin-bottom: 1em;
 }
 
-.more > svg{
+.more__pattern-mobile{
     position: absolute;
     top: 0;
     right: 0;
@@ -288,7 +302,7 @@ footer{
     position: relative;
 }
 
-.footer__top > svg{
+.footer__pattern-mobile{
     position: absolute;
     top: 0;
     left: -20px;
@@ -331,14 +345,16 @@ footer{
     padding: 0;
 }
 
-.footer_main_item ul li{
+.footer_main_item ul li a{
     color: var(--veryDarkViolet);
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 1em;
+    display: inline-block;
+    
 }
 
-@media  (max-width: 600px){
+@media  (max-width: 900px){
 
     .nav__container{
         padding: 2em 1em;
@@ -351,10 +367,8 @@ footer{
         left: 0;
         z-index: 11;
         
-       
     }
 
-    
     
      .checkbox:checked  ~ .nav__menu{
          visibility: visible;
@@ -443,10 +457,18 @@ footer{
        position: relative;
        top: 80px;
    }
+
+   .desktop__left-pattern,
+   .desktop__right-pattern,
+   .more__pattern-desktop,
+   .footer__pattern-desktop,
+   .desktop-intro{
+    display: none;
+}
         
 }
 
-@media (min-width: 600px){
+@media (min-width: 900px){
 
     .container_desktop{
         width: 80%;
@@ -487,7 +509,12 @@ footer{
 
      .menu__item  a{
         color: var(--darkGrayViolet);
+        transition: .5s ease;
     } 
+
+    .menu__item  a:hover{
+        color: var(--darViolet);
+    }
 
     .menu__btn{
         border: solid 1.5px var(--darViolet);
@@ -585,13 +612,13 @@ footer{
     .services__header::after{
         left: 0;
         width: 150px;
-        top: -40px;
+        ;
     }
 
     .services{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         text-align: left;
     }
 
@@ -610,6 +637,7 @@ footer{
         align-items: center;
         text-align: left;
         padding: 5em;
+        margin-bottom: 8em;
     }
 
     .more > h2{
@@ -628,6 +656,45 @@ footer{
         top: 0;
         right: 0;
     }
+
+    .footer__pattern-mobile{
+        display: none;
+    }
+
+    .footer__pattern-desktop{
+        position: absolute;
+        left: -150px;
+        top: 0;
+    }
+
+    .footer__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2em;
+    }
+
+  .footer__main{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 20;
+    
+  }
+
+  .footer_main_item{
+      text-align: left;
+  }
+
+  .footer_main_item,
+  .footer_main_item > h3  {
+      font-size: 1.3rem;
+  }
+
+  .footer_main_item ul li a:hover{
+      border-bottom: solid 1px var(--darViolet);
+      transition: 2s ease;
+  }
 
 
     
